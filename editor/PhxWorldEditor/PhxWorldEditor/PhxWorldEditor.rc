@@ -1,0 +1,789 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#include "afxres.h"
+#include "verrsrc.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (United States) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#include ""afxres.h""\r\n"
+    "#include ""verrsrc.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#include ""res\\PhxWorldEditor.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""      // Standard components\r\n"
+    "#include ""afxprint.rc""    // printing/print preview resources\r\n"
+    "#if !defined(_AFXDLL)\r\n"
+    "#include ""afxribbon.rc""        // MFC ribbon and control bar resources\r\n"
+    "#endif\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\PhxWorldEditor.ico"
+IDR_PhxWorldEditorTYPE  ICON                    "res\\PhxWorldEditorDoc.ico"
+IDI_FILE_VIEW           ICON                    "res\\file_view.ico"
+IDI_FILE_VIEW_HC        ICON                    "res\\file_view_hc.ico"
+IDI_CLASS_VIEW          ICON                    "res\\class_view.ico"
+IDI_CLASS_VIEW_HC       ICON                    "res\\class_view_hc.ico"
+IDI_OUTPUT_WND          ICON                    "res\\output_wnd.ico"
+IDI_OUTPUT_WND_HC       ICON                    "res\\output_wnd_hc.ico"
+IDI_PROPERTIES_WND      ICON                    "res\\properties_wnd.ico"
+IDI_PROPERTIES_WND_HC   ICON                    "res\\properties_wnd_hc.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP                  "res\\Toolbar.bmp"
+IDR_MAINFRAME_256       BITMAP                  "res\\Toolbar256.bmp"
+IDR_SORT                BITMAP                  "res\\sort.bmp"
+IDB_SORT_24             BITMAP                  "res\\sort_hc.bmp"
+IDB_FILE_VIEW           BITMAP                  "res\\fileview.bmp"
+IDB_FILE_VIEW_24        BITMAP                  "res\\fileview_hc.bmp"
+IDB_CLASS_VIEW          BITMAP                  "res\\classview.bmp"
+IDB_CLASS_VIEW_24       BITMAP                  "res\\classview_hc.bmp"
+IDR_EXPLORER            BITMAP                  "res\\explorer.bmp"
+IDB_EXPLORER_24         BITMAP                  "res\\explorer_hc.bmp"
+IDR_MENU_IMAGES         BITMAP                  "res\\menuimages.bmp"
+IDB_MENU_IMAGES_24      BITMAP                  "res\\menuimages_hc.bmp"
+IDR_PROPERTIES          BITMAP                  "res\\properties.bmp"
+IDB_PROPERTIES_HC       BITMAP                  "res\\properties_hc.bmp"
+IDR_MMTOOLBAR           BITMAP                  "res\\camera.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR 16, 15
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      ID_FILE_PRINT
+    BUTTON      ID_APP_ABOUT
+END
+
+IDR_MAINFRAME_256 TOOLBAR 16, 15
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      ID_FILE_PRINT
+    BUTTON      ID_APP_ABOUT
+END
+
+IDR_SORT TOOLBAR 16, 15
+BEGIN
+    BUTTON      ID_SORT_MENU
+    BUTTON      ID_NEW_FOLDER
+END
+
+IDR_EXPLORER TOOLBAR 16, 15
+BEGIN
+    BUTTON      ID_PROPERTIES
+END
+
+IDR_MENU_IMAGES TOOLBAR 16, 15
+BEGIN
+    BUTTON      ID_WINDOW_MANAGER
+    SEPARATOR
+    BUTTON      ID_WINDOW_CASCADE
+    BUTTON      ID_WINDOW_TILE_HORZ
+    BUTTON      ID_TOOLS_MACRO
+    BUTTON      ID_SORTING_SORTALPHABETIC
+    BUTTON      ID_SORTING_SORTBYTYPE
+    BUTTON      ID_SORTING_SORTBYACCESS
+    BUTTON      ID_SORTING_GROUPBYTYPE
+END
+
+IDR_PROPERTIES TOOLBAR 16, 15
+BEGIN
+    BUTTON      ID_EXPAND_ALL
+    BUTTON      ID_SORTPROPERTIES
+    BUTTON      ID_PROPERTIES1
+    BUTTON      ID_PROPERTIES2
+END
+
+IDR_MMTOOLBAR TOOLBAR 42, 15
+BEGIN
+    BUTTON      ID_CAMFREE
+    BUTTON      ID_CAMPAN
+    SEPARATOR
+    BUTTON      ID_CAMEDTHGT
+    BUTTON      ID_CAMPNTTRN
+    BUTTON      ID_MMADD
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM "&Save\tCtrl+S",               ID_FILE_XAVE
+        MENUITEM "Close",                       ID_FILE_CLOSE
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&Object"
+    BEGIN
+        MENUITEM "3D Model",                    ID_OBJECT_3DMODEL
+        MENUITEM "Lights",                      ID_OBJECT_LIGHT
+        MENUITEM "Reference Points",            ID_OBJECT_REFERENCEPOINTS
+    END
+    POPUP "&Terrain"
+    BEGIN
+        MENUITEM "Generate..",                  ID_TERRAIN_GE
+        MENUITEM "Texture Layer",               ID_TERRAIN_TEXTURELAYER
+        MENUITEM "Edit Height",                 ID_TERRAIN_EDITHEIGHT
+    END
+    POPUP "&View"
+    BEGIN
+        POPUP "&Toolbars and Docking Windows"
+        BEGIN
+            MENUITEM "<placeholder>",               ID_VIEW_TOOLBAR
+        END
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+    END
+    POPUP "&Settings"
+    BEGIN
+        MENUITEM "Movement",                    ID_SETTINGS_MOVEMENT
+        MENUITEM "Environment",                 ID_SETTINGS_ENVIRONMENT
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About PhxWorldEditor...",    ID_APP_ABOUT
+    END
+END
+
+IDR_POPUP_EDIT MENU
+BEGIN
+    POPUP "Edit"
+    BEGIN
+        MENUITEM "Cu&t\tCtrl+X",                ID_EDIT_CUT
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM "&Paste\tCtrl+V",              ID_EDIT_PASTE
+    END
+END
+
+IDR_POPUP_SORT MENU
+BEGIN
+    POPUP "Sorting"
+    BEGIN
+        MENUITEM "&Sort Alphabeticaly",         ID_SORTING_SORTALPHABETIC
+        MENUITEM "Sort by &Type",               ID_SORTING_SORTBYTYPE
+        MENUITEM "Sort by Acc&ess",             ID_SORTING_SORTBYACCESS
+        MENUITEM "Group by t&ype",              ID_SORTING_GROUPBYTYPE
+    END
+END
+
+IDR_POPUP_EXPLORER MENU
+BEGIN
+    POPUP "Explorer"
+    BEGIN
+        MENUITEM "&Open",                       ID_OPEN
+        MENUITEM "Open &With....",              ID_OPEN_WITH
+        MENUITEM SEPARATOR
+        MENUITEM "&Compile",                    ID_DUMMY_COMPILE
+        MENUITEM SEPARATOR
+        MENUITEM "Cu&t\tCtrl+X",                ID_EDIT_CUT
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM "&Remove",                     ID_EDIT_CLEAR
+        MENUITEM SEPARATOR
+        MENUITEM "&Properties...",              ID_PROPERTIES
+    END
+END
+
+IDR_OUTPUT_POPUP MENU
+BEGIN
+    POPUP "Popup"
+    BEGIN
+        MENUITEM "&Copy",                       ID_EDIT_COPY
+        MENUITEM "&Clear",                      ID_EDIT_CLEAR
+        MENUITEM SEPARATOR
+        MENUITEM "&Hide",                       ID_VIEW_OUTPUTWND
+    END
+END
+
+IDR_HELP_MENU MENU
+BEGIN
+    MENUITEM "&About PhxWorldEditor...",    ID_APP_ABOUT
+END
+
+IDR_THEME_MENU MENU
+BEGIN
+    MENUITEM "Office 2007 (&Blue Style)",   ID_VIEW_APPLOOK_OFF_2007_BLUE
+    MENUITEM "Office 2007 (B&lack Style)",  ID_VIEW_APPLOOK_OFF_2007_BLACK
+    MENUITEM "Office 2007 (&Silver Style)", ID_VIEW_APPLOOK_OFF_2007_SILVER
+    MENUITEM "Office 2007 (&Aqua Style)",   ID_VIEW_APPLOOK_OFF_2007_AQUA
+    MENUITEM "Win&dows 7",                  ID_VIEW_APPLOOK_WINDOWS_7
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 199, 74
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About PhxWorldEditor"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,15,17,20,20
+    LTEXT           "PhxWorldEditor, Alpha Version 1.0.118",IDC_STATIC,42,14,150,10,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2013-2014",IDC_STATIC,42,26,114,8
+    DEFPUSHBUTTON   "OK",IDOK,142,53,50,14,WS_GROUP
+    LTEXT           "Ruell Magpayo <ruellm@yahoo.com>",IDC_STATIC,54,37,138,11
+END
+
+IDD_GEN_TERRAIN DIALOGEX 0, 0, 247, 272
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Generate Terrain"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,119,241,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,177,241,50,14
+    LTEXT           "Width",IDC_STATIC,15,23,20,8
+    EDITTEXT        IDC_EDIT1,50,42,31,12,ES_AUTOHSCROLL
+    LTEXT           "Height",IDC_STATIC,95,24,22,8
+    EDITTEXT        IDC_EDIT2,123,23,31,13,ES_AUTOHSCROLL
+    LTEXT           "Vertex Distance",IDC_STATIC,15,38,29,22
+    EDITTEXT        IDC_EDIT3,49,22,32,12,ES_AUTOHSCROLL
+    GROUPBOX        "Generation",IDC_STATIC,17,62,158,32
+    CONTROL         "Flat",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON,27,76,28,10
+    CONTROL         "Random",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON,65,76,42,10
+    CONTROL         "Height map",IDC_RADIO3,"Button",BS_AUTORADIOBUTTON,114,76,52,10
+    GROUPBOX        "Base Texture",IDC_STATIC,16,151,215,85
+    LTEXT           "File Name",IDC_STATIC,23,169,32,8
+    EDITTEXT        IDC_EDIT4,59,166,132,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_BUTTON1,199,166,23,15
+    GROUPBOX        "",IDC_STATIC,60,185,112,23
+    CONTROL         "Tiled",IDC_RADIO4,"Button",BS_AUTORADIOBUTTON,123,193,31,10
+    CONTROL         "Stretched",IDC_RADIO5,"Button",BS_AUTORADIOBUTTON,67,193,47,10
+    LTEXT           "Tiled Rate",IDC_STATIC,23,216,33,8
+    EDITTEXT        IDC_EDIT5,61,211,24,15,ES_AUTOHSCROLL
+    GROUPBOX        "Random Parameters",IDC_STATIC,17,100,215,44
+    LTEXT           "noise size",IDC_STATIC,23,119,32,8
+    EDITTEXT        IDC_EDIT6,58,117,30,12,ES_AUTOHSCROLL
+    LTEXT           "persistence",IDC_STATIC,94,120,38,8
+    EDITTEXT        IDC_EDIT7,131,117,29,12,ES_AUTOHSCROLL
+    LTEXT           "octave",IDC_STATIC,167,120,23,8
+    EDITTEXT        IDC_EDIT8,193,116,29,13,ES_AUTOHSCROLL
+    GROUPBOX        "",IDC_STATIC,7,7,233,258
+END
+
+IDD_HEIGHTEDIT_DLG DIALOGEX 0, 0, 139, 341
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "Edit Type",IDC_STATIC,10,17,119,35
+    CONTROL         "Circle",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON | WS_GROUP,24,32,37,10
+    CONTROL         "Rectangle",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON,73,33,48,10
+    GROUPBOX        "Circle Params",IDC_STATIC,20,141,97,48
+    LTEXT           "Radius",IDC_STATIC,29,162,26,12
+    EDITTEXT        IDC_RADIUS,54,160,33,14,ES_AUTOHSCROLL
+    LTEXT           "Max Height",IDC_STATIC,20,75,37,8
+    EDITTEXT        IDC_MAXHEIGHT,61,72,33,14,ES_AUTOHSCROLL
+    GROUPBOX        "Rect Params",IDC_STATIC,15,201,104,65
+    LTEXT           "Width",IDC_STATIC,25,221,20,8
+    EDITTEXT        IDC_RECT_WIDTH,49,218,36,14,ES_AUTOHSCROLL
+    LTEXT           "Height",IDC_STATIC,25,240,22,8
+    EDITTEXT        IDC_RECT_HEIGHT,49,237,36,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Apply",IDC_APPLY_HGTSET,16,276,104,16
+    LTEXT           "Step Size",IDC_STATIC,26,96,30,8
+    EDITTEXT        IDC_HEDT_STEPSIZE,62,92,30,15,ES_AUTOHSCROLL
+    GROUPBOX        "General",IDC_STATIC,11,60,115,66
+    CONTROL         "Raise",IDC_RADIO6,"Button",BS_AUTORADIOBUTTON | WS_GROUP,25,109,33,10
+    CONTROL         "Lower",IDC_RADIO7,"Button",BS_AUTORADIOBUTTON,63,109,35,10
+END
+
+IDD_TERRAIN_TEXTURE_DLG DIALOGEX 0, 0, 165, 335
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LISTBOX         IDC_TEXLIST,12,15,136,124,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Add",IDC_ADDTEX,14,146,38,19
+    PUSHBUTTON      "Delete",IDC_DELTEX,61,146,38,20
+    PUSHBUTTON      "Advance",IDC_ADVTEX,107,146,38,20
+    LTEXT           "Radius",IDC_STATIC,48,190,22,8
+    EDITTEXT        IDC_PAINT_RADIUS,72,187,30,15,ES_AUTOHSCROLL
+    GROUPBOX        "",IDC_STATIC,13,177,130,84
+    CONTROL         "",IDC_SLIDER1,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,29,233,100,15
+    LTEXT           "Alpha",IDC_STATIC,50,218,19,8
+    EDITTEXT        IDC_TEXALPHA,71,215,30,16,ES_AUTOHSCROLL
+    GROUPBOX        "",IDC_STATIC,25,207,108,46
+    CONTROL         "Un Paint",IDC_UNPAINT,"Button",BS_AUTOCHECKBOX | BS_PUSHLIKE | WS_TABSTOP,50,271,56,18
+    PUSHBUTTON      "Use",IDC_USETEX,50,297,56,17
+END
+
+IDD_ADVANCETEX_DLG DIALOGEX 0, 0, 143, 95
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Advance Texture"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,15,74,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,71,74,50,14
+    GROUPBOX        "Height Based Texture",IDC_STATIC,7,7,124,60
+    LTEXT           "From",IDC_STATIC,45,23,17,8
+    EDITTEXT        IDC_FROM,65,20,36,14,ES_AUTOHSCROLL
+    LTEXT           "To",IDC_STATIC,51,45,9,8
+    EDITTEXT        IDC_TO,65,43,36,14,ES_AUTOHSCROLL
+END
+
+IDD_MODEL3D_DLG DIALOGEX 0, 0, 159, 402
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LISTBOX         IDC_LIST1,11,13,136,141,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Add Static",IDC_ADDOBJECT,44,163,60,26
+    PUSHBUTTON      "Delete",IDC_DELOBJECT,44,224,57,25
+    GROUPBOX        "Model List",IDC_STATIC,6,3,145,285
+    PUSHBUTTON      "Add Animated",IDC_ADDMD5,44,194,58,26
+    GROUPBOX        "",IDC_STATIC,37,156,73,97
+    CONTROL         "Use",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | BS_PUSHLIKE | WS_TABSTOP,47,260,45,19
+END
+
+IDD_NODELIST DIALOGEX 0, 0, 174, 257
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "Objects",IDC_STATIC,7,10,150,232
+    CONTROL         "",IDC_TREE2,"SysTreeView32",WS_BORDER | WS_HSCROLL | WS_TABSTOP,15,23,133,207
+END
+
+IDD_MOVEMENT_DLG DIALOGEX 0, 0, 155, 184
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Movement Settings"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,31,156,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,87,155,50,14
+    GROUPBOX        "",IDC_STATIC,7,4,133,145
+    LTEXT           "Camera Step",IDC_STATIC,42,30,42,8
+    EDITTEXT        IDC_EDIT1,92,26,32,13,ES_AUTOHSCROLL
+    LTEXT           "Object Step",IDC_STATIC,45,88,39,8
+    EDITTEXT        IDC_EDIT2,92,84,32,14,ES_AUTOHSCROLL
+    LTEXT           "Object Rotate Step",IDC_STATIC,20,109,63,8
+    EDITTEXT        IDC_EDIT3,91,105,32,14,ES_AUTOHSCROLL
+    LTEXT           "Camera Drag Friction",IDC_STATIC,16,49,68,8
+    EDITTEXT        IDC_EDIT4,91,46,32,14,ES_AUTOHSCROLL
+    LTEXT           "Pan Step",IDC_STATIC,51,67,30,8
+    EDITTEXT        IDC_EDIT5,91,65,31,13,ES_AUTOHSCROLL
+    LTEXT           "Object Scale Step",IDC_STATIC,24,127,58,8
+    EDITTEXT        IDC_SCALE_OBJ,92,124,31,15,ES_AUTOHSCROLL
+END
+
+IDD_ENVIRONMENT_DLG DIALOGEX 0, 0, 253, 202
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Environment Settings"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,190,18,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,189,41,50,14
+    GROUPBOX        "Ambient Color",IDC_STATIC,8,7,173,72
+    LTEXT           "R",IDC_STATIC,22,30,8,8
+    EDITTEXT        IDC_EDIT1,35,27,32,14,ES_AUTOHSCROLL
+    LTEXT           "G",IDC_STATIC,72,29,8,8
+    EDITTEXT        IDC_EDIT2,84,27,34,14,ES_AUTOHSCROLL
+    LTEXT           "B",IDC_STATIC,123,29,8,8
+    EDITTEXT        IDC_EDIT3,131,27,33,14,ES_AUTOHSCROLL
+    GROUPBOX        "Directional Light",IDC_STATIC,8,84,173,105
+    LTEXT           "Intensity",IDC_STATIC,21,55,30,8
+    EDITTEXT        IDC_EDIT4,53,52,40,14,ES_AUTOHSCROLL
+    LTEXT           "R",IDC_STATIC,20,104,8,8
+    EDITTEXT        IDC_EDIT10,34,101,33,14,ES_AUTOHSCROLL
+    LTEXT           "G",IDC_STATIC,73,103,8,8
+    EDITTEXT        IDC_EDIT11,85,101,32,14,ES_AUTOHSCROLL
+    LTEXT           "B",IDC_STATIC,122,103,8,8
+    EDITTEXT        IDC_EDIT9,130,101,33,14,ES_AUTOHSCROLL
+    LTEXT           "Intensity",IDC_STATIC,20,168,30,8
+    EDITTEXT        IDC_EDIT12,52,166,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT13,34,133,35,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT14,85,133,32,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT15,130,133,31,14,ES_AUTOHSCROLL
+    GROUPBOX        "Direction Vector",IDC_STATIC,17,120,157,40
+    LTEXT           "X",IDC_STATIC,22,136,8,8
+    LTEXT           "Y",IDC_STATIC,73,136,8,8
+    LTEXT           "Z",IDC_STATIC,120,135,8,8
+    LTEXT           "%",IDC_STATIC,97,55,8,8
+    LTEXT           "%",IDC_STATIC,97,169,8,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "CompanyName", "TODO: <Company name>"
+            VALUE "FileDescription", "PhxWorldEditor"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "PhxWorldEditor.exe"
+            VALUE "LegalCopyright", "TODO: (c) <Company name>.  All rights reserved."
+            VALUE "OriginalFilename", "PhxWorldEditor.exe"
+            VALUE "ProductName", "TODO: <Product name>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 192
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 67
+    END
+
+    IDD_GEN_TERRAIN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 240
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 265
+    END
+
+    IDD_HEIGHTEDIT_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 132
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 334
+    END
+
+    IDD_TERRAIN_TEXTURE_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 158
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 328
+    END
+
+    IDD_ADVANCETEX_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 136
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 88
+    END
+
+    IDD_MODEL3D_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 152
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 395
+    END
+
+    IDD_NODELIST, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 167
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 250
+    END
+
+    IDD_MOVEMENT_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 148
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 177
+    END
+
+    IDD_ENVIRONMENT_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 246
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 195
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDP_OLE_INIT_FAILED     "OLE initialization failed.  Make sure that the OLE libraries are the correct version."
+    ID_VIEW_HEIGHTEDIT      "Height Edit"
+    ID_VIEW_TEXTURE_LAYER   "Texture Layer"
+    103                     "Model 3D List"
+    IDS_VIEW_NODELIST       "World object list"
+END
+
+STRINGTABLE
+BEGIN
+    IDR_MAINFRAME           "PhxWorldEditor\n\nPhxWorldEditor\n\n\nPhxWorldEditor.Document\nPhxWorldEditor.Document"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_APP_TITLE       "PhxWorldEditor"
+    AFX_IDS_IDLEMESSAGE     "Ready"
+END
+
+STRINGTABLE
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE
+BEGIN
+    ID_FILE_NEW             "Create a new document\nNew"
+    ID_FILE_OPEN            "Open an existing document\nOpen"
+    ID_FILE_CLOSE           "Close the active document\nClose"
+    ID_FILE_SAVE            "Save the active document\nSave"
+    ID_FILE_SAVE_AS         "Save the active document with a new name\nSave As"
+    ID_FILE_PAGE_SETUP      "Change the printing options\nPage Setup"
+    ID_FILE_PRINT_SETUP     "Change the printer and printing options\nPrint Setup"
+    ID_FILE_PRINT           "Print the active document\nPrint"
+    ID_FILE_PRINT_DIRECT    "Print the active document using current options\nQuick Print"
+    ID_FILE_PRINT_PREVIEW   "Display full pages\nPrint Preview"
+END
+
+STRINGTABLE
+BEGIN
+    ID_APP_ABOUT            "Display program information, version number and copyright\nAbout"
+    ID_APP_EXIT             "Quit the application; prompts to save documents\nExit"
+END
+
+STRINGTABLE
+BEGIN
+    ID_FILE_MRU_FILE1       "Open this document"
+    ID_FILE_MRU_FILE2       "Open this document"
+    ID_FILE_MRU_FILE3       "Open this document"
+    ID_FILE_MRU_FILE4       "Open this document"
+    ID_FILE_MRU_FILE5       "Open this document"
+    ID_FILE_MRU_FILE6       "Open this document"
+    ID_FILE_MRU_FILE7       "Open this document"
+    ID_FILE_MRU_FILE8       "Open this document"
+    ID_FILE_MRU_FILE9       "Open this document"
+    ID_FILE_MRU_FILE10      "Open this document"
+    ID_FILE_MRU_FILE11      "Open this document"
+    ID_FILE_MRU_FILE12      "Open this document"
+    ID_FILE_MRU_FILE13      "Open this document"
+    ID_FILE_MRU_FILE14      "Open this document"
+    ID_FILE_MRU_FILE15      "Open this document"
+    ID_FILE_MRU_FILE16      "Open this document"
+END
+
+STRINGTABLE
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane\nNext Pane"
+    ID_PREV_PANE            "Switch back to the previous window pane\nPrevious Pane"
+END
+
+STRINGTABLE
+BEGIN
+    ID_WINDOW_SPLIT         "Split the active window into panes\nSplit"
+END
+
+STRINGTABLE
+BEGIN
+    ID_EDIT_CLEAR           "Erase the selection\nErase"
+    ID_EDIT_CLEAR_ALL       "Erase everything\nErase All"
+    ID_EDIT_COPY            "Copy the selection and put it on the Clipboard\nCopy"
+    ID_EDIT_CUT             "Cut the selection and put it on the Clipboard\nCut"
+    ID_EDIT_FIND            "Find the specified text\nFind"
+    ID_EDIT_PASTE           "Insert Clipboard contents\nPaste"
+    ID_EDIT_REPEAT          "Repeat the last action\nRepeat"
+    ID_EDIT_REPLACE         "Replace specific text with different text\nReplace"
+    ID_EDIT_SELECT_ALL      "Select the entire document\nSelect All"
+    ID_EDIT_UNDO            "Undo the last action\nUndo"
+    ID_EDIT_REDO            "Redo the previously undone action\nRedo"
+END
+
+STRINGTABLE
+BEGIN
+    ID_VIEW_STATUS_BAR      "Show or hide the status bar\nToggle Status Bar"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "Close print preview mode\nCancel Preview"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_STATUS_PANE1        "Pane 1"
+    IDS_STATUS_PANE2        "Pane 2"
+    IDS_TOOLBAR_STANDARD    "Standard"
+    IDS_TOOLBAR_CUSTOMIZE   "Customize..."
+END
+
+STRINGTABLE
+BEGIN
+    IDS_FILE_VIEW           "File View"
+    IDS_CLASS_VIEW          "Class View"
+    IDS_OUTPUT_WND          "Output"
+    IDS_PROPERTIES_WND      "Properties"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_EXPLORER            "Explorer"
+    IDS_EDIT_MENU           "Edit"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_BUILD_TAB           "Build"
+    IDS_DEBUG_TAB           "Debug"
+    IDS_FIND_TAB            "Find"
+END
+
+#endif    // English (United States) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE 9, 1
+#include "res\PhxWorldEditor.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"      // Standard components
+#include "afxprint.rc"    // printing/print preview resources
+#if !defined(_AFXDLL)
+#include "afxribbon.rc"        // MFC ribbon and control bar resources
+#endif
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

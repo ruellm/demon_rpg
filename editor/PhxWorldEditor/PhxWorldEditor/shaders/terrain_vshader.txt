@@ -1,0 +1,17 @@
+layout (location = 0) in vec3 vPosition;
+layout (location = 1) in vec3 vNormal;
+layout (location = 2) in vec2 vTexCoord;
+
+uniform mat4 gVP;
+out vec2 TexCoord0;
+out vec3 Normal0;
+
+void main()                                                                   
+{                                                               
+	mat4 world = mat4(1.0);
+	gl_Position =   gVP * world * vec4(vPosition, 1.0);
+	TexCoord0 = vTexCoord;
+	Normal0 = vNormal;
+
+}
+//@}-;--

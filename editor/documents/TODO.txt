@@ -1,0 +1,60 @@
+Todo check list:
+
+FOr Model Viewer;
+- None.
+
+Common (Level Editor and ModelViewer)
+- Bump/Normal Mapping for OBJ and MD5.
+- MD5 normals
+
+Level Editor:
+1. can we request on Undo feature?
+2. Frustum culling support -- immediate --> Done.
+3. opengl texture sampling
+4. md5 support in editor
+5. point light
+6. specular/shinyness
+7. shadow mapping
+8. add square mountain just like golden sun --> not so priority.
+9. adjustable/editable texture tiled rate including paint tiled rate -- immediate
+10.adjustable ambient/diffuse light - immediate
+11. resize object features. --> high priority. --> Done
+
+
+Maybe
+1. Apply Screen Space Ambient Occlusion (SSAO)
+2. Specular lighting/shinyness
+
+Overall Priority in Order:
+- resize object
+- Frustum culling --> Done, no terrain triangle check yet.
+- editable tiled rate   --> VOID feature, imposible to modify without affecting main texture rate
+- shader include --> Done and working.
+- adjust diffuse/ambient lighting --> Done. Ambient and Diffuse settings not yet saved to file. Support SSAO in the future.
+- apply normals and lights for OBJ and MD5. --> Added normals for OBJ, no MD5 normals yet
+- apply bump mapping.
+- multiple lights/deferred shading.
+- Shadow implementation.
+
+REMINDER:
+
+1. Mark label: ZBU_UNSURE -- for engine, platform and OS specific concerns. Just search in code
+                           it might work in windows but not in Android/Linux based
+
+2. mark label: ZBU_TODO -- for todo list, example: Texture Manager, Loader
+			search string "TODO"
+
+3. Directory should not have a "slash" at the end
+
+4. Review String handling in the code, it might slow down code in mobile.
+
+5. Version of shader should not be included in shader file, it is automatically attached by GfxShader class.
+
+------------------
+MUST DESIGN EFFICIENTLY!!
+
+1. Handling of Bounding Box to Scene Node relation must be optimized and design efficiently,
+including the checking of bounding box to frustum, and transforming min/max to world matrix.
+
+2. Math and intersection classed must be separated. Bounding Box against Ray, 
+check on SceneObject::MousePick.

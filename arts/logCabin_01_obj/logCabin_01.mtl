@@ -1,0 +1,56 @@
+newmtl lambert2SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd outUV_COLOR.jpg
+bump outUV_NRM.jpg -bm 1
+Ni 1.00
+Ks 0.50 0.50 0.50
+Ns 19.92
+newmtl lambert4SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd windows_outUV_color.jpg
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 13.54
+newmtl lambert5SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 0.94 0.94 0.94
+Ni 1.00
+Ks 0.50 0.50 0.50
+Ns 18.00
+newmtl lambert7SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd roof2_outUV.jpg
+bump roof2_outUV_NRM.png -bm 1
+Ni 1.00
+Ks 0.50 0.50 0.50
+Ns 18.00
+newmtl lambert8SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd houseBrace_outUV_color.jpg
+Ni 1.00
+Ks 0.50 0.50 0.50
+Ns 18.00
+newmtl phong1SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd chimney_TXTR.jpg
+bump chimney_NM.png -bm 1
+Ni 1.00
+Ks 0.50 0.50 0.50
+Ns 18.00

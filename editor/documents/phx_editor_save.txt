@@ -1,0 +1,32 @@
+terrrain_dimensison width height pixel_dist
+terrain_base_texture stringfilename
+terrain_texture filename
+terrain_alphamap index alpha
+terrain_repeat_rate repeat_rate
+terrain_hmap height
+..
+..
+..
+mesh_obj model_filename
+mesh_obj 
+..
+..
+..
+
+scene_obj [index] posx posy posz anglex angley anglez scalex scaley scalez
+..
+..
+..
+
+------------------------------------------------
+
+file.phx
+[filename_res]
+    models
+       models here
+       models and textures
+    textures
+       textures files
+
+
+------------------------------------------------

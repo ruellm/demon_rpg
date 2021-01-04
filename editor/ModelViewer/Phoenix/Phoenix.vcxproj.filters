@@ -1,0 +1,183 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="shaders">
+      <UniqueIdentifier>{fd3f4725-fca2-4d16-ae1b-e563a0e1a937}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="soil">
+      <UniqueIdentifier>{06374cad-53ab-4ba4-b079-2935820bf806}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="phxcommon">
+      <UniqueIdentifier>{90627816-e6f8-4338-8717-97b38af60b2f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="phxcommon\include">
+      <UniqueIdentifier>{a8a18df8-a782-4654-8777-1d1831939e8f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="phxcommon\source">
+      <UniqueIdentifier>{4a3ff002-9b6a-49fc-b9e2-c3515a1e0808}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+    <Text Include="shaders\global_vshader.txt">
+      <Filter>shaders</Filter>
+    </Text>
+    <Text Include="shaders\global_fshader.txt">
+      <Filter>shaders</Filter>
+    </Text>
+    <Text Include="shaders\grid_fshader.txt">
+      <Filter>shaders</Filter>
+    </Text>
+    <Text Include="shaders\grid_vshader.txt">
+      <Filter>shaders</Filter>
+    </Text>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Phoenix.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PhoenixDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="OpenGLWnd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\phxcommon\include\Camera.h">
+      <Filter>phxcommon\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\phxcommon\include\common.h">
+      <Filter>phxcommon\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\phxcommon\include\GLShaderFx.h">
+      <Filter>phxcommon\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\phxcommon\include\OBJModel.h">
+      <Filter>phxcommon\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\soil\image_DXT.h">
+      <Filter>soil</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\soil\image_helper.h">
+      <Filter>soil</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\soil\SOIL.h">
+      <Filter>soil</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\soil\stb_image_aug.h">
+      <Filter>soil</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\soil\stbi_DDS_aug.h">
+      <Filter>soil</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\soil\stbi_DDS_aug_c.h">
+      <Filter>soil</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\phxcommon\include\TextureLoader.h">
+      <Filter>phxcommon\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\phxcommon\include\MD5Model.h">
+      <Filter>phxcommon\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\phxcommon\include\Model3D.h">
+      <Filter>phxcommon\include</Filter>
+    </ClInclude>
+    <ClInclude Include="AnimationLstDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\phxcommon\include\Log.h">
+      <Filter>phxcommon\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\phxcommon\include\PathUtility.h">
+      <Filter>phxcommon\include</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Phoenix.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PhoenixDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="OpenGLWnd.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\phxcommon\source\Camera.cpp">
+      <Filter>phxcommon\source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\phxcommon\source\GLShaderFx.cpp">
+      <Filter>phxcommon\source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\phxcommon\source\OBJModel.cpp">
+      <Filter>phxcommon\source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\soil\image_DXT.c">
+      <Filter>soil</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\soil\image_helper.c">
+      <Filter>soil</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\soil\SOIL.c">
+      <Filter>soil</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\soil\stb_image_aug.c">
+      <Filter>soil</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\phxcommon\source\TextureLoader.cpp">
+      <Filter>phxcommon\source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\phxcommon\source\MD5Model.cpp">
+      <Filter>phxcommon\source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\phxcommon\source\Model3D.cpp">
+      <Filter>phxcommon\source</Filter>
+    </ClCompile>
+    <ClCompile Include="AnimationLstDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\phxcommon\source\Log.cpp">
+      <Filter>phxcommon\source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\phxcommon\source\PathUtility.cpp">
+      <Filter>phxcommon\source</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Phoenix.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\Phoenix.rc2">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\Phoenix.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+</Project>

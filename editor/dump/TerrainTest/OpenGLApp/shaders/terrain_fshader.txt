@@ -1,0 +1,45 @@
+#version 330 
+
+struct DirectionalLight
+{
+    vec3 Color;
+    float AmbientIntensity;
+    float DiffuseIntensity;
+    vec3 Direction;
+}; 
+
+uniform DirectionalLight gDirectionalLight; 
+uniform sampler2D gBaseSampler; 
+uniform sampler2D gTextureMap[3];
+uniform sampler2D gAlphaMap[3];
+uniform float repeatRate = 5.0; /* valu must be passed from upper layer*/
+
+in vec3 Normal0;  /* Variable names must MATCH with output from vertex shader*/
+in vec2 TexCoord0;  
+out vec4 FragColor; 
+
+void main()
+{
+	vec4 localColor = texture(gBaseSampler, TexCoord0.xy);  
+    vec3 ambient = vec3(1.0, 1.0, 1.0); 
+	vec4 AmbientColor = vec4(ambient, 1.0f) * gDirectionalLight.AmbientIntensity; 
+	float DiffuseFactor = dot(normalize(Normal0), -gDirectionalLight.Direction); 
+	vec4 DiffuseColor; 
+
+    if (DiffuseFactor > 0) {
+        DiffuseColor = vec4(gDirectionalLight.Color, 1.0) * 
+			DiffuseFactor * gDirectionalLight.DiffuseIntensity;
+    }
+    else {
+        /*DiffuseColor = vec4(0, 0, 0, 1);*/
+    }
+
+	/* Apply texture splatting*/
+	vec2 texCoord = vec2(TexCoord0.x / repeatRate, 1.0 - (TexCoord0.y / repeatRate) );
+	vec4 sampler0 = texture(gTextureMap[0], texCoord.xy);
+	float influence0 = texture(gAlphaMap[0], texCoord.xy).r;
+	localColor += (sampler0 * influence0);
+
+	 FragColor = localColor * (AmbientColor + DiffuseColor );
+} 
+//@}-;--

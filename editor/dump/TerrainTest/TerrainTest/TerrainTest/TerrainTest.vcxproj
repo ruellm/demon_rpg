@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{68E0A880-49F0-447B-962B-F66590651D39}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>TerrainTest</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>E:\repository\demonRPG\editor\glew-1.10.0-win32;E:\repository\demonRPG\editor\glm;E:\repository\demonRPG\editor;E:\repository\demonRPG\editor\phxcommon\include;E:\repository\demonRPG\editor\soil;$(IncludePath)</IncludePath>
+    <LibraryPath>E:\repository\demonRPG\editor\glew-1.10.0-win32\glew\lib\Release\Win32;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Text Include="..\..\OpenGLApp\shaders\terrain_fshader.txt" />
+    <Text Include="..\..\OpenGLApp\shaders\terrain_vshader.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\phxcommon\source\Camera.cpp" />
+    <ClCompile Include="..\..\..\..\phxcommon\source\GLShaderFx.cpp" />
+    <ClCompile Include="..\..\..\..\phxcommon\source\Log.cpp" />
+    <ClCompile Include="..\..\..\..\phxcommon\source\PathUtility.cpp" />
+    <ClCompile Include="..\..\..\..\phxcommon\source\Terrain.cpp" />
+    <ClCompile Include="..\..\..\..\phxcommon\source\TextureLoader.cpp" />
+    <ClCompile Include="..\..\..\..\soil\image_DXT.c" />
+    <ClCompile Include="..\..\..\..\soil\image_helper.c" />
+    <ClCompile Include="..\..\..\..\soil\SOIL.c" />
+    <ClCompile Include="..\..\..\..\soil\stb_image_aug.c" />
+    <ClCompile Include="..\..\OpenGLApp\OpenGLApp.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\phxcommon\include\Camera.h" />
+    <ClInclude Include="..\..\..\..\phxcommon\include\common.h" />
+    <ClInclude Include="..\..\..\..\phxcommon\include\GLShaderFx.h" />
+    <ClInclude Include="..\..\..\..\phxcommon\include\Log.h" />
+    <ClInclude Include="..\..\..\..\phxcommon\include\PathUtility.h" />
+    <ClInclude Include="..\..\..\..\phxcommon\include\Terrain.h" />
+    <ClInclude Include="..\..\..\..\phxcommon\include\TextureLoader.h" />
+    <ClInclude Include="..\..\..\..\soil\image_DXT.h" />
+    <ClInclude Include="..\..\..\..\soil\image_helper.h" />
+    <ClInclude Include="..\..\..\..\soil\SOIL.h" />
+    <ClInclude Include="..\..\..\..\soil\stbi_DDS_aug.h" />
+    <ClInclude Include="..\..\..\..\soil\stbi_DDS_aug_c.h" />
+    <ClInclude Include="..\..\..\..\soil\stb_image_aug.h" />
+    <ClInclude Include="..\..\OpenGLApp\OpenGLApp.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\..\OpenGLApp\OpenGLApp.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

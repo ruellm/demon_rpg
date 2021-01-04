@@ -1,0 +1,386 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="phxcommon">
+      <UniqueIdentifier>{98b1500a-7ea2-4e0a-a6ec-59c5b87b2007}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="phxcommon\include">
+      <UniqueIdentifier>{f6ead3f7-f5c1-4453-bd53-a09ce7173b2f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="phxcommon\source">
+      <UniqueIdentifier>{23f9e4c5-ace4-4aab-a0b7-817f39af075e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="soil">
+      <UniqueIdentifier>{b8bb34fc-8597-45c6-9956-5eb154e425a1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="shaders">
+      <UniqueIdentifier>{d7b83c0a-47ec-495e-a38e-fdce461c5f87}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\PhxWorldEditor\PhxWorldEditor.vcxproj.filters" />
+    <None Include="..\..\PhxWorldEditor\UserImages.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\PhxWorldEditor\shaders\grid_fshader.txt">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="..\..\PhxWorldEditor\shaders\grid_vshader.txt">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="..\..\PhxWorldEditor\shaders\terrain_fshader.txt">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="..\..\PhxWorldEditor\shaders\terrain_vshader.txt">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="..\..\PhxWorldEditor\res\PhxWorldEditor.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\PhxWorldEditor\res\PhxWorldEditorDoc.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\PhxWorldEditor\res\file_view.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\PhxWorldEditor\res\file_view_hc.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\PhxWorldEditor\res\class_view.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\PhxWorldEditor\res\class_view_hc.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\PhxWorldEditor\res\output_wnd.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\PhxWorldEditor\res\output_wnd_hc.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\PhxWorldEditor\res\properties_wnd.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\PhxWorldEditor\res\properties_wnd_hc.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\PhxWorldEditor\res\Toolbar.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\PhxWorldEditor\res\Toolbar256.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\PhxWorldEditor\res\sort.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\PhxWorldEditor\res\sort_hc.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\PhxWorldEditor\res\fileview.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\PhxWorldEditor\res\fileview_hc.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\PhxWorldEditor\res\classview.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\PhxWorldEditor\res\classview_hc.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\PhxWorldEditor\res\explorer.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\PhxWorldEditor\res\explorer_hc.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\PhxWorldEditor\res\menuimages.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\PhxWorldEditor\res\menuimages_hc.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\PhxWorldEditor\res\properties.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\PhxWorldEditor\res\properties_hc.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\PhxWorldEditor\shaders\model_fshader.txt">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="..\..\PhxWorldEditor\shaders\model_vshader.txt">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="..\..\PhxWorldEditor\res\camera.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\PhxWorldEditor\shaders\light_fshader_common.txt">
+      <Filter>shaders</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\soil\image_DXT.c">
+      <Filter>soil</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\soil\image_helper.c">
+      <Filter>soil</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\soil\SOIL.c">
+      <Filter>soil</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\soil\stb_image_aug.c">
+      <Filter>soil</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\phxcommon\source\Camera.cpp">
+      <Filter>phxcommon\source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\phxcommon\source\GLShaderFx.cpp">
+      <Filter>phxcommon\source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\phxcommon\source\Log.cpp">
+      <Filter>phxcommon\source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\phxcommon\source\MD5Model.cpp">
+      <Filter>phxcommon\source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\phxcommon\source\Model3D.cpp">
+      <Filter>phxcommon\source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\phxcommon\source\OBJModel.cpp">
+      <Filter>phxcommon\source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\phxcommon\source\PathUtility.cpp">
+      <Filter>phxcommon\source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\phxcommon\source\TextureLoader.cpp">
+      <Filter>phxcommon\source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\PhxWorldEditor\FileView.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\PhxWorldEditor\GenTerrainDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\PhxWorldEditor\MainFrm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\PhxWorldEditor\OutputWnd.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\PhxWorldEditor\PhxWorldEditor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\PhxWorldEditor\PhxWorldEditorDoc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\PhxWorldEditor\PhxWorldEditorView.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\PhxWorldEditor\PropertiesWnd.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\PhxWorldEditor\stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\PhxWorldEditor\ViewTree.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\phxcommon\source\Terrain.cpp">
+      <Filter>phxcommon\source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\PhxWorldEditor\TerrainShaderFx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\PhxWorldEditor\HeightEditDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\PhxWorldEditor\TerrainTextureDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\PhxWorldEditor\AdvanceTexDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\phxcommon\source\BoundingBox.cpp">
+      <Filter>phxcommon\source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\PhxWorldEditor\Model3DDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\PhxWorldEditor\NodeListDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\PhxWorldEditor\ModelShaderFx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\PhxWorldEditor\SceneObject.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\PhxWorldEditor\MovementSettingsDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\phxcommon\source\Frustum.cpp">
+      <Filter>phxcommon\source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\phxcommon\source\Plane.cpp">
+      <Filter>phxcommon\source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\PhxWorldEditor\CommonLightShader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\PhxWorldEditor\EnvSettingsDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\soil\image_DXT.h">
+      <Filter>soil</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\soil\image_helper.h">
+      <Filter>soil</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\soil\SOIL.h">
+      <Filter>soil</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\soil\stb_image_aug.h">
+      <Filter>soil</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\soil\stbi_DDS_aug.h">
+      <Filter>soil</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\soil\stbi_DDS_aug_c.h">
+      <Filter>soil</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\phxcommon\include\Camera.h">
+      <Filter>phxcommon\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\phxcommon\include\common.h">
+      <Filter>phxcommon\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\phxcommon\include\GLShaderFx.h">
+      <Filter>phxcommon\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\phxcommon\include\Log.h">
+      <Filter>phxcommon\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\phxcommon\include\MD5Model.h">
+      <Filter>phxcommon\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\phxcommon\include\Model3D.h">
+      <Filter>phxcommon\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\phxcommon\include\OBJModel.h">
+      <Filter>phxcommon\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\phxcommon\include\PathUtility.h">
+      <Filter>phxcommon\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\phxcommon\include\TextureLoader.h">
+      <Filter>phxcommon\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\PhxWorldEditor\ClassView.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\PhxWorldEditor\FileView.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\PhxWorldEditor\GenTerrainDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\PhxWorldEditor\MainFrm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\PhxWorldEditor\OutputWnd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\PhxWorldEditor\PhxWorldEditor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\PhxWorldEditor\PhxWorldEditorDoc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\PhxWorldEditor\PhxWorldEditorView.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\PhxWorldEditor\PropertiesWnd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\PhxWorldEditor\resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\PhxWorldEditor\stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\PhxWorldEditor\targetver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\PhxWorldEditor\ViewTree.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\phxcommon\include\Terrain.h">
+      <Filter>phxcommon\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\PhxWorldEditor\Lights.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\PhxWorldEditor\TerrainShaderFx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\PhxWorldEditor\HeightEditDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\PhxWorldEditor\TerrainTextureDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\PhxWorldEditor\AdvanceTexDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\phxcommon\include\BoundingBox.h">
+      <Filter>phxcommon\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\PhxWorldEditor\Model3DDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\PhxWorldEditor\NodeListDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\PhxWorldEditor\ModelShaderFx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\PhxWorldEditor\SceneObject.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\PhxWorldEditor\MovementSettingsDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\phxcommon\include\Frustum.h">
+      <Filter>phxcommon\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\phxcommon\include\Plane.h">
+      <Filter>phxcommon\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\PhxWorldEditor\CommonLightShader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\PhxWorldEditor\EnvSettingsDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\..\PhxWorldEditor\PhxWorldEditor.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

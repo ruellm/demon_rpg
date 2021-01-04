@@ -1,0 +1,173 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{F6D74D48-6DB8-4415-8B9A-DB6E0D3BA495}</ProjectGuid>
+    <RootNamespace>Phoenix</RootNamespace>
+    <Keyword>MFCProj</Keyword>
+    <ProjectName>PhxModelViewer</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>NotSet</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>..\..\glew-1.10.0-win32\;..\..\glm\;..\..\;..\..\phxcommon\include;$(IncludePath)</IncludePath>
+    <LibraryPath>E:\repository\demonRPG\editor\glew-1.10.0-win32\glew\lib\Release\Win32;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>..\..\glew-1.10.0-win32\;..\..\glm\;..\..\;..\..\phxcommon\include;$(IncludePath)</IncludePath>
+    <LibraryPath>E:\repository\demonRPG\editor\glew-1.10.0-win32\glew\lib\Release\Win32;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+    <Text Include="shaders\global_fshader.txt" />
+    <Text Include="shaders\global_vshader.txt" />
+    <Text Include="shaders\grid_fshader.txt" />
+    <Text Include="shaders\grid_vshader.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\phxcommon\include\Camera.h" />
+    <ClInclude Include="..\..\phxcommon\include\common.h" />
+    <ClInclude Include="..\..\phxcommon\include\GLShaderFx.h" />
+    <ClInclude Include="..\..\phxcommon\include\Log.h" />
+    <ClInclude Include="..\..\phxcommon\include\MD5Model.h" />
+    <ClInclude Include="..\..\phxcommon\include\Model3D.h" />
+    <ClInclude Include="..\..\phxcommon\include\OBJModel.h" />
+    <ClInclude Include="..\..\phxcommon\include\PathUtility.h" />
+    <ClInclude Include="..\..\phxcommon\include\TextureLoader.h" />
+    <ClInclude Include="..\..\soil\image_DXT.h" />
+    <ClInclude Include="..\..\soil\image_helper.h" />
+    <ClInclude Include="..\..\soil\SOIL.h" />
+    <ClInclude Include="..\..\soil\stbi_DDS_aug.h" />
+    <ClInclude Include="..\..\soil\stbi_DDS_aug_c.h" />
+    <ClInclude Include="..\..\soil\stb_image_aug.h" />
+    <ClInclude Include="AnimationLstDlg.h" />
+    <ClInclude Include="OpenGLWnd.h" />
+    <ClInclude Include="Phoenix.h" />
+    <ClInclude Include="PhoenixDlg.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\phxcommon\source\Camera.cpp" />
+    <ClCompile Include="..\..\phxcommon\source\GLShaderFx.cpp" />
+    <ClCompile Include="..\..\phxcommon\source\Log.cpp" />
+    <ClCompile Include="..\..\phxcommon\source\MD5Model.cpp" />
+    <ClCompile Include="..\..\phxcommon\source\Model3D.cpp" />
+    <ClCompile Include="..\..\phxcommon\source\OBJModel.cpp" />
+    <ClCompile Include="..\..\phxcommon\source\PathUtility.cpp" />
+    <ClCompile Include="..\..\phxcommon\source\TextureLoader.cpp" />
+    <ClCompile Include="..\..\soil\image_DXT.c" />
+    <ClCompile Include="..\..\soil\image_helper.c" />
+    <ClCompile Include="..\..\soil\SOIL.c" />
+    <ClCompile Include="..\..\soil\stb_image_aug.c" />
+    <ClCompile Include="AnimationLstDlg.cpp" />
+    <ClCompile Include="OpenGLWnd.cpp" />
+    <ClCompile Include="Phoenix.cpp" />
+    <ClCompile Include="PhoenixDlg.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Phoenix.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\Phoenix.rc2" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\Phoenix.ico" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="Phoenix.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

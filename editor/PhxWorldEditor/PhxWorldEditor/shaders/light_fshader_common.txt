@@ -1,0 +1,46 @@
+/*
+   Common Fragment shader definitions for Light implementations;
+   Author: Ruell Magpayo <ruellm@yahoo.com>
+   Date Created: February 23, 2014
+
+   This file contains definitions for;
+   global ambient light
+   Directional Light
+   ...
+*/
+
+struct DirectionalLight
+{
+    vec3 Color;
+    float DiffuseIntensity;
+    vec3 Direction;
+}; 
+
+uniform DirectionalLight gDirectionalLight; 
+uniform vec3 gAmbientColor;
+uniform float gAmbientIntensity;
+
+vec4 ApplyDirectionalLight(vec3 normal0)
+{
+	vec4 AmbientColor = vec4(gAmbientColor, 1.0f) * gAmbientIntensity; 
+	float DiffuseFactor = dot(normalize(normal0), -gDirectionalLight.Direction); 
+	vec4 DiffuseColor; 
+
+    if (DiffuseFactor > 0) {
+        DiffuseColor = vec4(gDirectionalLight.Color, 1.0) * 
+			DiffuseFactor * gDirectionalLight.DiffuseIntensity;
+    }
+    else {
+        /*DiffuseColor = vec4(0, 0, 0, 1);*/
+    }
+
+	return (AmbientColor + DiffuseColor );
+
+}
+
+vec4 GetCombinedLightColor(vec3 normal0)
+{
+	vec4 result = ApplyDirectionalLight(normal0);
+	return result;
+}
+/*add enter new line key after that*/

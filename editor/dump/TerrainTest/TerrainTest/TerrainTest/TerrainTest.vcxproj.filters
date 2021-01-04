@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="shaders">
+      <UniqueIdentifier>{7c6f2981-eba0-4cbe-9190-2529bb068958}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="phxcommon">
+      <UniqueIdentifier>{fdefadf4-4ca1-470c-886d-e55434c0e508}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="phxcommon\include">
+      <UniqueIdentifier>{a2cbad01-de8d-4b16-bc81-75753ff138a8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="phxcommon\source">
+      <UniqueIdentifier>{94168b00-ac20-48e6-9cda-cd8f8c106485}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="soil">
+      <UniqueIdentifier>{693939ce-a234-42c1-832a-df52534b4fcd}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\..\OpenGLApp\shaders\terrain_fshader.txt">
+      <Filter>shaders</Filter>
+    </Text>
+    <Text Include="..\..\OpenGLApp\shaders\terrain_vshader.txt">
+      <Filter>shaders</Filter>
+    </Text>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\OpenGLApp\OpenGLApp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phxcommon\source\Camera.cpp">
+      <Filter>phxcommon\source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phxcommon\source\GLShaderFx.cpp">
+      <Filter>phxcommon\source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phxcommon\source\Log.cpp">
+      <Filter>phxcommon\source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phxcommon\source\TextureLoader.cpp">
+      <Filter>phxcommon\source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phxcommon\source\PathUtility.cpp">
+      <Filter>phxcommon\source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\soil\image_DXT.c">
+      <Filter>soil</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\soil\image_helper.c">
+      <Filter>soil</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\soil\SOIL.c">
+      <Filter>soil</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\soil\stb_image_aug.c">
+      <Filter>soil</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phxcommon\source\Terrain.cpp">
+      <Filter>phxcommon\source</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\OpenGLApp\OpenGLApp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phxcommon\include\Camera.h">
+      <Filter>phxcommon\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phxcommon\include\common.h">
+      <Filter>phxcommon\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phxcommon\include\GLShaderFx.h">
+      <Filter>phxcommon\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phxcommon\include\Log.h">
+      <Filter>phxcommon\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phxcommon\include\PathUtility.h">
+      <Filter>phxcommon\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phxcommon\include\TextureLoader.h">
+      <Filter>phxcommon\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\soil\image_DXT.h">
+      <Filter>soil</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\soil\image_helper.h">
+      <Filter>soil</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\soil\SOIL.h">
+      <Filter>soil</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\soil\stb_image_aug.h">
+      <Filter>soil</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\soil\stbi_DDS_aug.h">
+      <Filter>soil</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\soil\stbi_DDS_aug_c.h">
+      <Filter>soil</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phxcommon\include\Terrain.h">
+      <Filter>phxcommon\include</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\..\OpenGLApp\OpenGLApp.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>
